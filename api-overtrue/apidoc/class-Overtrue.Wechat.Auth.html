@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Overtrue\Wechat\Auth</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Overtrue.html">
+						Overtrue<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Overtrue.Wechat.html">
+						Wechat<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Overtrue.Wechat.Messages.html">
+						Messages					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Overtrue.Wechat.Utils.html">
+						Utils					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Overtrue.Wechat.AccessToken.html">AccessToken</a></li>
+				<li><a href="class-Overtrue.Wechat.Alias.html">Alias</a></li>
+				<li class="active"><a href="class-Overtrue.Wechat.Auth.html">Auth</a></li>
+				<li><a href="class-Overtrue.Wechat.Cache.html">Cache</a></li>
+				<li><a href="class-Overtrue.Wechat.Card.html">Card</a></li>
+				<li><a href="class-Overtrue.Wechat.Color.html">Color</a></li>
+				<li><a href="class-Overtrue.Wechat.Crypt.html">Crypt</a></li>
+				<li><a href="class-Overtrue.Wechat.Group.html">Group</a></li>
+				<li><a href="class-Overtrue.Wechat.Http.html">Http</a></li>
+				<li><a href="class-Overtrue.Wechat.Image.html">Image</a></li>
+				<li><a href="class-Overtrue.Wechat.Input.html">Input</a></li>
+				<li><a href="class-Overtrue.Wechat.Js.html">Js</a></li>
+				<li><a href="class-Overtrue.Wechat.Media.html">Media</a></li>
+				<li><a href="class-Overtrue.Wechat.Menu.html">Menu</a></li>
+				<li><a href="class-Overtrue.Wechat.MenuItem.html">MenuItem</a></li>
+				<li><a href="class-Overtrue.Wechat.Message.html">Message</a></li>
+				<li><a href="class-Overtrue.Wechat.Notice.html">Notice</a></li>
+				<li><a href="class-Overtrue.Wechat.QRCode.html">QRCode</a></li>
+				<li><a href="class-Overtrue.Wechat.Semantic.html">Semantic</a></li>
+				<li><a href="class-Overtrue.Wechat.Server.html">Server</a></li>
+				<li><a href="class-Overtrue.Wechat.Staff.html">Staff</a></li>
+				<li><a href="class-Overtrue.Wechat.Stats.html">Stats</a></li>
+				<li><a href="class-Overtrue.Wechat.Store.html">Store</a></li>
+				<li><a href="class-Overtrue.Wechat.Url.html">Url</a></li>
+				<li><a href="class-Overtrue.Wechat.User.html">User</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Overtrue.Wechat.Exception.html">Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Overtrue.Wechat.html" title="Summary of Overtrue\Wechat"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Auth</h1>
+
+
+	<div class="description">
+	<p>OAuth 网页授权获取用户信息</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Overtrue.html">Overtrue</a>\<a href="namespace-Overtrue.Wechat.html">Wechat</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Overtrue.Wechat.Auth.html#7-193" title="Go to source code">Wechat/Auth.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Overtrue.Wechat.Auth.html#52-64" title="Go to source code">__construct</a>( <span>string <var>$appId</var></span>, <span>string <var>$appSecret</var></span> )</code>
+
+		<div class="description short">
+			<p>constructor</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>constructor</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$appId</var></dt>
+					<dd></dd>
+					<dt><var>$appSecret</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="url" id="_url">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_url">#</a>
+		<code><a href="source-class-Overtrue.Wechat.Auth.html#66-88" title="Go to source code">url</a>( <span>string <var>$to</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$scope</var> = <span class="php-quote">'snsapi_userinfo'</span></span>, <span>string <var>$state</var> = <span class="php-quote">'STATE'</span></span> )</code>
+
+		<div class="description short">
+			<p>生成outh URL</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>生成outh URL</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$to</var></dt>
+					<dd></dd>
+					<dt><var>$scope</var></dt>
+					<dd>$state</dd>
+					<dt><var>$state</var></dt>
+					<dd>$scope</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="redirect" id="_redirect">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_redirect">#</a>
+		<code><a href="source-class-Overtrue.Wechat.Auth.html#90-104" title="Go to source code">redirect</a>( <span>string <var>$to</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$scope</var> = <span class="php-quote">'snsapi_userinfo'</span></span>, <span>string <var>$state</var> = <span class="php-quote">'STATE'</span></span> )</code>
+
+		<div class="description short">
+			<p>直接跳转</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>直接跳转</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$to</var></dt>
+					<dd></dd>
+					<dt><var>$scope</var></dt>
+					<dd></dd>
+					<dt><var>$state</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="user" id="_user">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Overtrue.Wechat.Utils.Bag.html">Overtrue\Wechat\Utils\Bag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_user">#</a>
+		<code><a href="source-class-Overtrue.Wechat.Auth.html#106-134" title="Go to source code">user</a>( )</code>
+
+		<div class="description short">
+			<p>获取已授权用户</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>获取已授权用户</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Overtrue.Wechat.Utils.Bag.html">Overtrue\Wechat\Utils\Bag</a></code><br>| null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="authorize" id="_authorize">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Overtrue.Wechat.Utils.Bag.html">Overtrue\Wechat\Utils\Bag</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_authorize">#</a>
+		<code><a href="source-class-Overtrue.Wechat.Auth.html#136-152" title="Go to source code">authorize</a>( <span>string <var>$to</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$scope</var> = <span class="php-quote">'snsapi_userinfo'</span></span>, <span>string <var>$state</var> = <span class="php-quote">'STATE'</span></span> )</code>
+
+		<div class="description short">
+			<p>通过授权获取用户</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>通过授权获取用户</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$to</var></dt>
+					<dd></dd>
+					<dt><var>$scope</var></dt>
+					<dd>$state</dd>
+					<dt><var>$state</var></dt>
+					<dd>$scope</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Overtrue.Wechat.Utils.Bag.html">Overtrue\Wechat\Utils\Bag</a></code><br>| null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAccessPermission" id="_getAccessPermission">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAccessPermission">#</a>
+		<code><a href="source-class-Overtrue.Wechat.Auth.html#154-171" title="Go to source code">getAccessPermission</a>( <span>string <var>$code</var></span> )</code>
+
+		<div class="description short">
+			<p>获取access token</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>获取access token</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$code</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUser" id="_getUser">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUser">#</a>
+		<code><a href="source-class-Overtrue.Wechat.Auth.html#173-192" title="Go to source code">getUser</a>( <span>string <var>$openId</var></span>, <span>string <var>$accessToken</var></span> )</code>
+
+		<div class="description short">
+			<p>获取用户信息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>获取用户信息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openId</var></dt>
+					<dd></dd>
+					<dt><var>$accessToken</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="API_USER" id="API_USER">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Overtrue.Wechat.Auth.html#47" title="Go to source code"><b>API_USER</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#API_USER" class="anchor">#</a>
+				<code><span class="php-quote">'https://api.weixin.qq.com/sns/userinfo'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="API_TOKEN_GET" id="API_TOKEN_GET">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Overtrue.Wechat.Auth.html#48" title="Go to source code"><b>API_TOKEN_GET</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#API_TOKEN_GET" class="anchor">#</a>
+				<code><span class="php-quote">'https://api.weixin.qq.com/sns/oauth2/access_token'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="API_TOKEN_REFRESH" id="API_TOKEN_REFRESH">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Overtrue.Wechat.Auth.html#49" title="Go to source code"><b>API_TOKEN_REFRESH</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#API_TOKEN_REFRESH" class="anchor">#</a>
+				<code><span class="php-quote">'https://api.weixin.qq.com/sns/oauth2/refresh_token'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="API_URL" id="API_URL">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Overtrue.Wechat.Auth.html#50" title="Go to source code"><b>API_URL</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#API_URL" class="anchor">#</a>
+				<code><span class="php-quote">'https://open.weixin.qq.com/connect/oauth2/authorize'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="appId" id="$appId">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Overtrue.Wechat.Auth.html#12-17" title="Go to source code"><var>$appId</var></a>
+
+			<div class="description short">
+				<p>应用ID</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>应用ID</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$appId" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="appSecret" id="$appSecret">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Overtrue.Wechat.Auth.html#19-24" title="Go to source code"><var>$appSecret</var></a>
+
+			<div class="description short">
+				<p>应用secret</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>应用secret</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$appSecret" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="http" id="$http">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Overtrue.Wechat.Http.html">Overtrue\Wechat\Http</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Overtrue.Wechat.Auth.html#26-31" title="Go to source code"><var>$http</var></a>
+
+			<div class="description short">
+				<p>Http对象</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Http对象</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$http" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="input" id="$input">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Overtrue.Wechat.Utils.Bag.html">Overtrue\Wechat\Utils\Bag</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Overtrue.Wechat.Auth.html#33-38" title="Go to source code"><var>$input</var></a>
+
+			<div class="description short">
+				<p>输入</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>输入</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$input" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="authorizedUser" id="$authorizedUser">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Overtrue.Wechat.Utils.Bag.html">Overtrue\Wechat\Utils\Bag</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Overtrue.Wechat.Auth.html#40-45" title="Go to source code"><var>$authorizedUser</var></a>
+
+			<div class="description short">
+				<p>已授权用户</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>已授权用户</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$authorizedUser" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
