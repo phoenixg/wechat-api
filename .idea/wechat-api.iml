@@ -7,11 +7,9 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/sharetools/apigen.phar" />
           <root url="phar://$MODULE_DIR$/shared/tools/apigen.phar" />
         </CLASSES>
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/sharetools/apigen.phar" />
           <root url="phar://$MODULE_DIR$/shared/tools/apigen.phar" />
         </SOURCES>
       </library>

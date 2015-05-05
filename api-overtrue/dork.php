@@ -2,6 +2,11 @@
 require "./autoload.php";
 $config = include "../shared/config/config.php";
 
+function logdebug($text){
+    file_put_contents('./debug.log',$text."\n",FILE_APPEND);
+};
+
+
 use Overtrue\Wechat\Server;
 
 $appId          = $config['appid'];
