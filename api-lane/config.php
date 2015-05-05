@@ -12,19 +12,20 @@ namespace LaneWeChat;
 //版本号
 define('LANEWECHAT_VERSION', '1.4');
 define('LANEWECHAT_VERSION_DATE', '2014-11-05');
+$config = include "../shared/config/config.php";
 
 /*
  * 服务器配置，详情请参考@link http://mp.weixin.qq.com/wiki/index.php?title=接入指南
  */
-define("WECHAT_URL", 'http://www.lanecn.com');
-define('WECHAT_TOKEN', 'weixin');
-define('ENCODING_AES_KEY', "MqAuKoex6FyT5No0OcpRyCicThGs0P1vz4mJ2gwvvkF");
+define("WECHAT_URL", 'http://www.domain.com');
+define('WECHAT_TOKEN', $config['token']);
+define('ENCODING_AES_KEY', $config['encodengAESKey']);
 
 /*
  * 开发者配置
  */
-define("WECHAT_APPID", 'wx5d57f64bb4804d90');
-define("WECHAT_APPSECRET", '4b1fa6d9442351ec9268eff05e38f521');
+define("WECHAT_APPID", $config['appid']);
+define("WECHAT_APPSECRET", $config['appsecret']);
 
 
 ////-----引入系统所需类库-------------------
