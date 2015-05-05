@@ -17,7 +17,7 @@ $config = include "../shared/config/config.php";
 /*
  * 服务器配置，详情请参考@link http://mp.weixin.qq.com/wiki/index.php?title=接入指南
  */
-define("WECHAT_URL", 'http://www.domain.com');
+define("WECHAT_URL", 'http://wxclients2015.phpdebuggr.com/mine/wechat-api/api-lane/wechat.php');
 define('WECHAT_TOKEN', $config['token']);
 define('ENCODING_AES_KEY', $config['encodengAESKey']);
 

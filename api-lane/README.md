@@ -169,7 +169,8 @@
 
     2、配置项：打开根目录下的config.php，修改定义常量WECHAT_APPID，WECHAT_APPSECRET，WECHAT_URL。其中前两项可以在微信公众号官网的开发者页面中找到，而WECHAT_URL是你微信项目的URL，以http://开头
 
-    3、本框架的外部访问唯一入口为根目录下的wechat.php，本框架的内部调用唯一入口为根目录下的lanewechat.php。两者的区别是wechat.php是通过http://www.abc.com/lanewechat/wechat.php访问，是留给微信平台调用的入口。而lanewechat.php是我们项目内部调用时需要include 'lanewechat/lanewechat.php';
+    3、本框架的外部访问唯一入口为根目录下的dork.php(wechat.php)，本框架的内部调用唯一入口为根目录下的lanewechat.php。两者的区别是dork.php是通过http://www.abc.com/lanewechat/dork.php访问，
+      是留给微信平台调用的入口。而lanewechat.php是我们项目内部调用时需要include 'lanewechat/lanewechat.php';
 
     4、首次使用时，请打开根目录下的wechat.php，注释掉26行，并且打开注释第29行。
 
@@ -255,7 +256,8 @@
 
     二、AccessToken授权。
 
-        1、类简介：除了被动相应用户之外，在主动给用户发送消息，用户组管理等高级操作，是需要AccessToken授权的，我们调用一个URL给微信服务器，微信服务器会返回给我们一个散列字符串，在高级操作的时候需要将此串以参数的形式发送。散列字符串10分钟内有效，过期需要重新获取，获取新的后之前的全部失效。
+        1、类简介：除了被动相应用户之外，在主动给用户发送消息，用户组管理等高级操作，是需要AccessToken授权的，我们调用一个URL给微信服务器，
+          微信服务器会返回给我们一个散列字符串，在高级操作的时候需要将此串以参数的形式发送。散列字符串10分钟内有效，过期需要重新获取，获取新的后之前的全部失效。
 
         2、使用命名空间：use LaneWeChat\Core\AccessToken;
 
@@ -271,7 +273,8 @@
         6、功能补充
             有一个地方需要用户自行完善，根据介绍我们已经知道了，获取AccessToken只有10分钟的有效期，过期需要重新获取。因此，我们需要存储这个AccessToken。
             由于大家的存储方式各不相同，有Mysql的，有Redis的，有MongoDB的，还有Session的。所以这里我讲存储和读取给留空了。
-            流程：AccessToken类，public方法只有一个，就是getAccessToken()。这个方法会调用一个私有方法_checkAccessToken()来检测AccessToken是否存在并且是否过期，如果不存在或过期，则调用私有方法_getAccessToken()
+            流程：AccessToken类，public方法只有一个，就是getAccessToken()。这个方法会调用一个私有方法_checkAccessToken()来检测AccessToken是否存在并且是否过期，
+                 如果不存在或过期，则调用私有方法_getAccessToken()
             完善步骤：
             1）、打开core/accesstoken.lib.php文件。
             2）、私有方法_getAccessToken()的倒数第二行（return是倒数第一行），在这个地方，请讲变量$accessTokenJson存储起来，变量$accessTokenJson是一个字符串。
