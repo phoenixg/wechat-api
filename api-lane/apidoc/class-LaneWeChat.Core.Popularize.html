@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LaneWeChat\Core\Popularize</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.html">
+						LaneWeChat<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.html">
+						Core<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-LaneWeChat.Core.Aes.html">
+						Aes					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LaneWeChat.Core.AccessToken.html">AccessToken</a></li>
+				<li><a href="class-LaneWeChat.Core.AdvancedBroadcast.html">AdvancedBroadcast</a></li>
+				<li><a href="class-LaneWeChat.Core.Auth.html">Auth</a></li>
+				<li><a href="class-LaneWeChat.Core.AutoReply.html">AutoReply</a></li>
+				<li><a href="class-LaneWeChat.Core.Curl.html">Curl</a></li>
+				<li><a href="class-LaneWeChat.Core.CustomService.html">CustomService</a></li>
+				<li><a href="class-LaneWeChat.Core.IntelligentInterface.html">IntelligentInterface</a></li>
+				<li><a href="class-LaneWeChat.Core.Media.html">Media</a></li>
+				<li><a href="class-LaneWeChat.Core.Menu.html">Menu</a></li>
+				<li><a href="class-LaneWeChat.Core.Msg.html">Msg</a></li>
+				<li><a href="class-LaneWeChat.Core.MsgConstant.html">MsgConstant</a></li>
+				<li class="active"><a href="class-LaneWeChat.Core.Popularize.html">Popularize</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponseInitiative.html">ResponseInitiative</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponsePassive.html">ResponsePassive</a></li>
+				<li><a href="class-LaneWeChat.Core.TemplateMessage.html">TemplateMessage</a></li>
+				<li><a href="class-LaneWeChat.Core.UserManage.html">UserManage</a></li>
+				<li><a href="class-LaneWeChat.Core.Wechat.html">Wechat</a></li>
+				<li><a href="class-LaneWeChat.Core.WeChatOAuth.html">WeChatOAuth</a></li>
+				<li><a href="class-LaneWeChat.Core.WechatRequest.html">WechatRequest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LaneWeChat.Core.html" title="Summary of LaneWeChat\Core"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Popularize</h1>
+
+
+	<div class="description">
+	<p>推广支持
+User: lane
+Date: 14-10-31
+Time: 下午4:15
+E-mail: lixuan868686@163.com
+WebSite: http://www.lanecn.com</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-LaneWeChat.html">LaneWeChat</a>\<a href="namespace-LaneWeChat.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-LaneWeChat.Core.Popularize.html#3-78" title="Go to source code">popularize.lib.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="createTicket" id="_createTicket">
+
+		<td class="attributes"><code>
+			 public static
+
+			Array(
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createTicket">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Popularize.html#12-46" title="Go to source code">createTicket</a>( <span> <var>$type</var></span>, <span> <var>$expireSeconds</var></span>, <span> <var>$sceneId</var></span> )</code>
+
+		<div class="description short">
+			<p>生成带参数的二维码 - 第一步 创建二维码ticket</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>生成带参数的二维码 - 第一步 创建二维码ticket</p>
+
+<p>获取带参数的二维码的过程包括两步，首先创建二维码ticket，然后凭借ticket到指定URL换取二维码。</p>
+
+<p>目前有2种类型的二维码，分别是临时二维码和永久二维码，
+前者有过期时间，最大为1800秒，但能够生成较多数量，后者无过期时间，数量较少（目前参数只支持1--100000）。
+两种二维码分别适用于帐号绑定、用户来源统计等场景。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd>临时二维码类型为1，永久二维码类型为2</dd>
+					<dt><var>$expireSeconds</var></dt>
+					<dd>过期时间，只在类型为临时二维码时有效。最大为1800，单位秒</dd>
+					<dt><var>$sceneId</var></dt>
+					<dd>场景值ID，临时二维码时为32位非0整型，永久二维码时最大值为100000（目前参数只支持1--100000）</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Array(<br><p>//获取的二维码ticket，凭借此ticket可以在有效时间内换取二维码。
+     "ticket"=>"gQH47joAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2taZ2Z3TVRtNzJXV1Brb3ZhYmJJAAIEZ23sUwMEmm3sUw==",
+     //二维码的有效时间，以秒为单位。最大不超过1800。
+     "expire_seconds"=>60,
+     //二维码图片解析后的地址，开发者可根据该地址自行生成需要的二维码图片
+     "url"=>"http://weixin.qq.com/q/kZgfwMTm72WWPkovabbI"
+)</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQrcode" id="_getQrcode">
+
+		<td class="attributes"><code>
+			 public static
+
+			直接echo本函数的返回值，并在调用页面添加header(&#039;Content-type:
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQrcode">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Popularize.html#48-62" title="Go to source code">getQrcode</a>( <span> <var>$ticket</var></span>, <span> <var>$filename</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>生成带参数的二维码 - 第二步 通过ticket换取二维码</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>生成带参数的二维码 - 第二步 通过ticket换取二维码</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ticket</var></dt>
+					<dd>Popularize::createTicket()获得的</dd>
+					<dt><var>$filename</var></dt>
+					<dd>文件路径，如果不为空，则会创建一个图片文件，二维码文件为jpg格式，保存到指定的路径</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					直接echo本函数的返回值，并在调用页面添加header(&#039;Content-type:<br>image/jpg');，将会展示出一个二维码的图片。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="long2short" id="_long2short">
+
+		<td class="attributes"><code>
+			 public static
+
+			array(&#039;errcode&#039;=&gt;0,
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_long2short">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Popularize.html#64-77" title="Go to source code">long2short</a>( <span> <var>$longUrl</var></span> )</code>
+
+		<div class="description short">
+			<p>将一条长链接转成短链接。
+主要使用场景：开发者用于生成二维码的原链接（商品、支付二维码等）太长导致扫码速度和成功率下降，将原长链接通过此接口转成短链接再生成二维码将大大提升扫码速度和成功率。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>将一条长链接转成短链接。
+主要使用场景：开发者用于生成二维码的原链接（商品、支付二维码等）太长导致扫码速度和成功率下降，将原长链接通过此接口转成短链接再生成二维码将大大提升扫码速度和成功率。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$longUrl</var></dt>
+					<dd>需要转换的长链接，支持http://、https://、weixin://wxpay 格式的url</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array(&#039;errcode&#039;=&gt;0,<br>'errmsg'=>'错误信息', 'short_url'=>'http://t.cn/asdasd')错误码为0表示正常
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

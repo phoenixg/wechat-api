@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LaneWeChat\Core\WeChatOAuth</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.html">
+						LaneWeChat<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.html">
+						Core<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-LaneWeChat.Core.Aes.html">
+						Aes					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LaneWeChat.Core.AccessToken.html">AccessToken</a></li>
+				<li><a href="class-LaneWeChat.Core.AdvancedBroadcast.html">AdvancedBroadcast</a></li>
+				<li><a href="class-LaneWeChat.Core.Auth.html">Auth</a></li>
+				<li><a href="class-LaneWeChat.Core.AutoReply.html">AutoReply</a></li>
+				<li><a href="class-LaneWeChat.Core.Curl.html">Curl</a></li>
+				<li><a href="class-LaneWeChat.Core.CustomService.html">CustomService</a></li>
+				<li><a href="class-LaneWeChat.Core.IntelligentInterface.html">IntelligentInterface</a></li>
+				<li><a href="class-LaneWeChat.Core.Media.html">Media</a></li>
+				<li><a href="class-LaneWeChat.Core.Menu.html">Menu</a></li>
+				<li><a href="class-LaneWeChat.Core.Msg.html">Msg</a></li>
+				<li><a href="class-LaneWeChat.Core.MsgConstant.html">MsgConstant</a></li>
+				<li><a href="class-LaneWeChat.Core.Popularize.html">Popularize</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponseInitiative.html">ResponseInitiative</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponsePassive.html">ResponsePassive</a></li>
+				<li><a href="class-LaneWeChat.Core.TemplateMessage.html">TemplateMessage</a></li>
+				<li><a href="class-LaneWeChat.Core.UserManage.html">UserManage</a></li>
+				<li><a href="class-LaneWeChat.Core.Wechat.html">Wechat</a></li>
+				<li class="active"><a href="class-LaneWeChat.Core.WeChatOAuth.html">WeChatOAuth</a></li>
+				<li><a href="class-LaneWeChat.Core.WechatRequest.html">WechatRequest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LaneWeChat.Core.html" title="Summary of LaneWeChat\Core"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class WeChatOAuth</h1>
+
+
+	<div class="description">
+	<p>微信OAuth2.0获取认证
+Created by lane.
+User: lane
+Date: 14-3-28
+Time: 下午1:55
+Mail lixuan868686@163.com
+Blog http://www.lanecn.com</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-LaneWeChat.html">LaneWeChat</a>\<a href="namespace-LaneWeChat.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-LaneWeChat.Core.WeChatOAuth.html#3-107" title="Go to source code">wechatoauth.lib.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getCode" id="_getCode">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCode">#</a>
+		<code><a href="source-class-LaneWeChat.Core.WeChatOAuth.html#13-32" title="Go to source code">getCode</a>( <span> <var>$redirect_uri</var></span>, <span> <var>$state</var> = <span class="php-num">1</span></span>, <span> <var>$scope</var> = <span class="php-quote">'snsapi_base'</span></span> )</code>
+
+		<div class="description short">
+			<p>Description: 获取CODE</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Description: 获取CODE</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$redirect_uri</var></dt>
+					<dd>将会跳转到redirect_uri/?code=CODE&amp;state=STATE 通过GET方式获取code和state</dd>
+					<dt><var>$state</var></dt>
+					<dd></dd>
+					<dt><var>$scope</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAccessTokenAndOpenId" id="_getAccessTokenAndOpenId">
+
+		<td class="attributes"><code>
+			 public static
+
+			Array(access_token,
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAccessTokenAndOpenId">#</a>
+		<code><a href="source-class-LaneWeChat.Core.WeChatOAuth.html#35-51" title="Go to source code">getAccessTokenAndOpenId</a>( <span> <var>$code</var></span> )</code>
+
+		<div class="description short">
+			<p>Description: 通过code换取网页授权access_token
+首先请注意，这里通过code换取的网页授权access_token,与基础支持中的access_token不同。
+公众号可通过下述接口来获取网页授权access_token。
+如果网页授权的作用域为snsapi_base，则本步骤中获取到网页授权access_token的同时，也获取到了openid，snsapi_base式的网页授权流程即到此为止。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Description: 通过code换取网页授权access_token
+首先请注意，这里通过code换取的网页授权access_token,与基础支持中的access_token不同。
+公众号可通过下述接口来获取网页授权access_token。
+如果网页授权的作用域为snsapi_base，则本步骤中获取到网页授权access_token的同时，也获取到了openid，snsapi_base式的网页授权流程即到此为止。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$code</var></dt>
+					<dd>getCode()获取的code参数</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Array(access_token,<br>expires_in, refresh_token, openid, scope)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="refreshToken" id="_refreshToken">
+
+		<td class="attributes"><code>
+			 public static
+
+			array(
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_refreshToken">#</a>
+		<code><a href="source-class-LaneWeChat.Core.WeChatOAuth.html#53-69" title="Go to source code">refreshToken</a>( <span> <var>$refreshToken</var></span> )</code>
+
+		<div class="description short">
+			<p>刷新access_token（如果需要）
+由于access_token拥有较短的有效期，当access_token超时后，可以使用refresh_token进行刷新，refresh_token拥有较长的有效期（7天、30天、60天、90天），当refresh_token失效的后，需要用户重新授权。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>刷新access_token（如果需要）
+由于access_token拥有较短的有效期，当access_token超时后，可以使用refresh_token进行刷新，refresh_token拥有较长的有效期（7天、30天、60天、90天），当refresh_token失效的后，需要用户重新授权。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$refreshToken</var></dt>
+					<dd>通过本类的第二个方法getAccessTokenAndOpenId可以获得一个数组，数组中有一个字段是refresh_token，就是这里的参数</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array(<br><p>"access_token"=>"网页授权接口调用凭证,注意：此access_token与基础支持的access_token不同",
+"expires_in"=>access_token接口调用凭证超时时间，单位（秒）,
+"refresh_token"=>"用户刷新access_token",
+"openid"=>"用户唯一标识",
+"scope"=>"用户授权的作用域，使用逗号（,）分隔")</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUserInfo" id="_getUserInfo">
+
+		<td class="attributes"><code>
+			 public static
+
+			array(&quot;openid&quot;=&gt;&quot;用户的唯一标识&quot;,
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUserInfo">#</a>
+		<code><a href="source-class-LaneWeChat.Core.WeChatOAuth.html#71-94" title="Go to source code">getUserInfo</a>( <span> <var>$accessToken</var></span>, <span> <var>$openId</var></span>, <span> <var>$lang</var> = <span class="php-quote">'zh_CN'</span></span> )</code>
+
+		<div class="description short">
+			<p>拉取用户信息(需scope为 snsapi_userinfo)
+如果网页授权作用域为snsapi_userinfo，则此时开发者可以通过access_token和openid拉取用户信息了。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>拉取用户信息(需scope为 snsapi_userinfo)
+如果网页授权作用域为snsapi_userinfo，则此时开发者可以通过access_token和openid拉取用户信息了。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$accessToken</var></dt>
+					<dd>网页授权接口调用凭证。通过本类的第二个方法getAccessTokenAndOpenId可以获得一个数组，数组中有一个字段是access_token，就是这里的参数。注意：此access_token与基础支持的access_token不同</dd>
+					<dt><var>$openId</var></dt>
+					<dd>用户的唯一标识</dd>
+					<dt><var>$lang</var></dt>
+					<dd>简体，zh_TW 繁体，en 英语</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array(&quot;openid&quot;=&gt;&quot;用户的唯一标识&quot;,<br><p>"nickname"=>'用户昵称',
+"sex"=>"1是男，2是女，0是未知",
+"province"=>"用户个人资料填写的省份"
+"city"=>"普通用户个人资料填写的城市",
+"country"=>"国家，如中国为CN",
+//户头像，最后一个数值代表正方形头像大小（有0、46、64、96、132数值可选，0代表640*640正方形头像），用户没有头像时该项为空
+"headimgurl"=>"http://wx.qlogo.cn/mmopen/g3MonUZtNHkdmzicIlibx6iaFqAc56vxLSUfpb6n5WKSYVY0ChQKkiaJSgQ1dZuTOgvLLrhJbERQQ4eMsv84eavHiaiceqxibJxCfHe/46",
+//用户特权信息，json 数组，如微信沃卡用户为chinaunicom
+"privilege"=>array("PRIVILEGE1", "PRIVILEGE2"),
+);</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkAccessToken" id="_checkAccessToken">
+
+		<td class="attributes"><code>
+			 public static
+
+			array(&quot;errcode&quot;=&gt;0,&quot;errmsg&quot;=&gt;&quot;ok&quot;)
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkAccessToken">#</a>
+		<code><a href="source-class-LaneWeChat.Core.WeChatOAuth.html#96-106" title="Go to source code">checkAccessToken</a>( <span> <var>$accessToken</var></span>, <span> <var>$openId</var></span> )</code>
+
+		<div class="description short">
+			<p>检验授权凭证（access_token）是否有效</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>检验授权凭证（access_token）是否有效</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$accessToken</var></dt>
+					<dd>网页授权接口调用凭证。通过本类的第二个方法getAccessTokenAndOpenId可以获得一个数组，数组中有一个字段是access_token，就是这里的参数。注意：此access_token与基础支持的access_token不同</dd>
+					<dt><var>$openId</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array(&quot;errcode&quot;=&gt;0,&quot;errmsg&quot;=&gt;&quot;ok&quot;)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

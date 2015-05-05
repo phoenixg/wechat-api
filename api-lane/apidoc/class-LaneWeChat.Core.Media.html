@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LaneWeChat\Core\Media</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.html">
+						LaneWeChat<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.html">
+						Core<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-LaneWeChat.Core.Aes.html">
+						Aes					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LaneWeChat.Core.AccessToken.html">AccessToken</a></li>
+				<li><a href="class-LaneWeChat.Core.AdvancedBroadcast.html">AdvancedBroadcast</a></li>
+				<li><a href="class-LaneWeChat.Core.Auth.html">Auth</a></li>
+				<li><a href="class-LaneWeChat.Core.AutoReply.html">AutoReply</a></li>
+				<li><a href="class-LaneWeChat.Core.Curl.html">Curl</a></li>
+				<li><a href="class-LaneWeChat.Core.CustomService.html">CustomService</a></li>
+				<li><a href="class-LaneWeChat.Core.IntelligentInterface.html">IntelligentInterface</a></li>
+				<li class="active"><a href="class-LaneWeChat.Core.Media.html">Media</a></li>
+				<li><a href="class-LaneWeChat.Core.Menu.html">Menu</a></li>
+				<li><a href="class-LaneWeChat.Core.Msg.html">Msg</a></li>
+				<li><a href="class-LaneWeChat.Core.MsgConstant.html">MsgConstant</a></li>
+				<li><a href="class-LaneWeChat.Core.Popularize.html">Popularize</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponseInitiative.html">ResponseInitiative</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponsePassive.html">ResponsePassive</a></li>
+				<li><a href="class-LaneWeChat.Core.TemplateMessage.html">TemplateMessage</a></li>
+				<li><a href="class-LaneWeChat.Core.UserManage.html">UserManage</a></li>
+				<li><a href="class-LaneWeChat.Core.Wechat.html">Wechat</a></li>
+				<li><a href="class-LaneWeChat.Core.WeChatOAuth.html">WeChatOAuth</a></li>
+				<li><a href="class-LaneWeChat.Core.WechatRequest.html">WechatRequest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LaneWeChat.Core.html" title="Summary of LaneWeChat\Core"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Media</h1>
+
+
+	<div class="description">
+	<p>多媒体的上传与下载
+Created by Lane.
+User: lane
+Date: 14-8-11
+Time: 上午9:51
+E-mail: lixuan868686@163.com
+WebSite: http://www.lanecn.com</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-LaneWeChat.html">LaneWeChat</a>\<a href="namespace-LaneWeChat.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-LaneWeChat.Core.Media.html#3-55" title="Go to source code">media.lib.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="upload" id="_upload">
+
+		<td class="attributes"><code>
+			 public static
+
+			{&quot;type&quot;:&quot;TYPE&quot;,&quot;media_id&quot;:&quot;MEDIA_ID&quot;,&quot;created_at&quot;:123456789}
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_upload">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Media.html#13-33" title="Go to source code">upload</a>( <span> <var>$filename</var></span>, <span> <var>$type</var></span> )</code>
+
+		<div class="description short">
+			<p>多媒体上传。上传图片、语音、视频等文件到微信服务器，上传后服务器会返回对应的media_id，公众号此后可根据该media_id来获取多媒体。
+上传的多媒体文件有格式和大小限制，如下：
+图片（image）: 1M，支持JPG格式
+语音（voice）：2M，播放长度不超过60s，支持AMR\MP3格式
+视频（video）：10MB，支持MP4格式
+缩略图（thumb）：64KB，支持JPG格式
+媒体文件在后台保存时间为3天，即3天后media_id失效。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>多媒体上传。上传图片、语音、视频等文件到微信服务器，上传后服务器会返回对应的media_id，公众号此后可根据该media_id来获取多媒体。
+上传的多媒体文件有格式和大小限制，如下：
+图片（image）: 1M，支持JPG格式
+语音（voice）：2M，播放长度不超过60s，支持AMR\MP3格式
+视频（video）：10MB，支持MP4格式
+缩略图（thumb）：64KB，支持JPG格式
+媒体文件在后台保存时间为3天，即3天后media_id失效。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd></dd>
+					<dt><var>$type</var></dt>
+					<dd>媒体文件类型，分别有图片（image）、语音（voice）、视频（video）和缩略图（thumb）</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					{&quot;type&quot;:&quot;TYPE&quot;,&quot;media_id&quot;:&quot;MEDIA_ID&quot;,&quot;created_at&quot;:123456789}
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="download" id="_download">
+
+		<td class="attributes"><code>
+			 public static
+
+			头信息如下
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_download">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Media.html#35-54" title="Go to source code">download</a>( <span> <var>$mediaId</var></span> )</code>
+
+		<div class="description short">
+			<p>下载多媒体文件</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>下载多媒体文件</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mediaId</var></dt>
+					<dd>多媒体ID</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					头信息如下<br><p>HTTP/1.1 200 OK
+Connection: close
+Content-Type: image/jpeg
+Content-disposition: attachment; filename="MEDIA_ID.jpg"
+Date: Sun, 06 Jan 2013 10:20:18 GMT
+Cache-Control: no-cache, must-revalidate
+Content-Length: 339721
+curl -G "http://file.api.weixin.qq.com/cgi-bin/media/get?access_token=ACCESS_TOKEN&amp;media_id=MEDIA_ID"</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

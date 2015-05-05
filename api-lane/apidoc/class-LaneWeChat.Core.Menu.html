@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LaneWeChat\Core\Menu</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.html">
+						LaneWeChat<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.html">
+						Core<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-LaneWeChat.Core.Aes.html">
+						Aes					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LaneWeChat.Core.AccessToken.html">AccessToken</a></li>
+				<li><a href="class-LaneWeChat.Core.AdvancedBroadcast.html">AdvancedBroadcast</a></li>
+				<li><a href="class-LaneWeChat.Core.Auth.html">Auth</a></li>
+				<li><a href="class-LaneWeChat.Core.AutoReply.html">AutoReply</a></li>
+				<li><a href="class-LaneWeChat.Core.Curl.html">Curl</a></li>
+				<li><a href="class-LaneWeChat.Core.CustomService.html">CustomService</a></li>
+				<li><a href="class-LaneWeChat.Core.IntelligentInterface.html">IntelligentInterface</a></li>
+				<li><a href="class-LaneWeChat.Core.Media.html">Media</a></li>
+				<li class="active"><a href="class-LaneWeChat.Core.Menu.html">Menu</a></li>
+				<li><a href="class-LaneWeChat.Core.Msg.html">Msg</a></li>
+				<li><a href="class-LaneWeChat.Core.MsgConstant.html">MsgConstant</a></li>
+				<li><a href="class-LaneWeChat.Core.Popularize.html">Popularize</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponseInitiative.html">ResponseInitiative</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponsePassive.html">ResponsePassive</a></li>
+				<li><a href="class-LaneWeChat.Core.TemplateMessage.html">TemplateMessage</a></li>
+				<li><a href="class-LaneWeChat.Core.UserManage.html">UserManage</a></li>
+				<li><a href="class-LaneWeChat.Core.Wechat.html">Wechat</a></li>
+				<li><a href="class-LaneWeChat.Core.WeChatOAuth.html">WeChatOAuth</a></li>
+				<li><a href="class-LaneWeChat.Core.WechatRequest.html">WechatRequest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LaneWeChat.Core.html" title="Summary of LaneWeChat\Core"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Menu</h1>
+
+
+	<div class="description">
+	<p>自定义菜单
+Created by PhpStorm.
+User: lane
+Date: 14-8-17
+Time: 下午3:12
+E-mail: lixuan868686@163.com
+WebSite: http://www.lanecn.com</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-LaneWeChat.html">LaneWeChat</a>\<a href="namespace-LaneWeChat.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-LaneWeChat.Core.Menu.html#3-129" title="Go to source code">menu.lib.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setMenu" id="_setMenu">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMenu">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Menu.html#13-102" title="Go to source code">setMenu</a>( <span> <var>$menuList</var></span> )</code>
+
+		<div class="description short">
+			<p>添加菜单，一级菜单最多3个，每个一级菜单最多可以有5个二级菜单</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>添加菜单，一级菜单最多3个，每个一级菜单最多可以有5个二级菜单</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$menuList</var></dt>
+					<dd><p>array('id'=>'', 'pid'=>'', 'name'=>'', 'type'=>'', 'code'=>''),
+             array('id'=>'', 'pid'=>'', 'name'=>'', 'type'=>'', 'code'=>''),
+             array('id'=>'', 'pid'=>'', 'name'=>'', 'type'=>'', 'code'=>''),
+         );
+         'code'是view类型的URL或者其他类型的key
+         'type'是菜单类型，如下:
+             1、click：点击推事件，用户点击click类型按钮后，微信服务器会通过消息接口推送消息类型为event的结构给开发者（参考消息接口指南），并且带上按钮中开发者填写的key值，开发者可以通过自定义的key值与用户进行交互；
+             2、view：跳转URL，用户点击view类型按钮后，微信客户端将会打开开发者在按钮中填写的网页URL，可与网页授权获取用户基本信息接口结合，获得用户基本信息。
+             3、scancode_push：扫码推事件，用户点击按钮后，微信客户端将调起扫一扫工具，完成扫码操作后显示扫描结果（如果是URL，将进入URL），且会将扫码的结果传给开发者，开发者可以下发消息。
+             4、scancode_waitmsg：扫码推事件且弹出“消息接收中”提示框，用户点击按钮后，微信客户端将调起扫一扫工具，完成扫码操作后，将扫码的结果传给开发者，同时收起扫一扫工具，然后弹出“消息接收中”提示框，随后可能会收到开发者下发的消息。
+             5、pic_sysphoto：弹出系统拍照发图，用户点击按钮后，微信客户端将调起系统相机，完成拍照操作后，会将拍摄的相片发送给开发者，并推送事件给开发者，同时收起系统相机，随后可能会收到开发者下发的消息。
+             6、pic_photo_or_album：弹出拍照或者相册发图，用户点击按钮后，微信客户端将弹出选择器供用户选择“拍照”或者“从手机相册选择”。用户选择后即走其他两种流程。
+             7、pic_weixin：弹出微信相册发图器，用户点击按钮后，微信客户端将调起微信相册，完成选择操作后，将选择的相片发送给开发者的服务器，并推送事件给开发者，同时收起相册，随后可能会收到开发者下发的消息。
+             8、location_select：弹出地理位置选择器，用户点击按钮后，微信客户端将调起地理位置选择工具，完成选择操作后，将选择的地理位置发送给开发者的服务器，同时收起位置选择工具，随后可能会收到开发者下发的消息。</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMenu" id="_getMenu">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean|mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMenu">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Menu.html#104-115" title="Go to source code">getMenu</a>( )</code>
+
+		<div class="description short">
+			<p>获取微信菜单</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>获取微信菜单</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean|mixed<br>返回：{"menu":{"button":[{"type":"click","name":"今日歌曲","key":"V1001_TODAY_MUSIC","sub_button":[]},{"type":"click","name":"歌手简介","key":"V1001_TODAY_SINGER","sub_button":[]},{"name":"菜单","sub_button":[{"type":"view","name":"搜索","url":"http://www.soso.com/","sub_button":[]},{"type":"view","name":"视频","url":"http://v.qq.com/","sub_button":[]},{"type":"click","name":"赞一下我们","key":"V1001_GOOD","sub_button":[]}]}]}}
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delMenu" id="_delMenu">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean|mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delMenu">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Menu.html#117-128" title="Go to source code">delMenu</a>( )</code>
+
+		<div class="description short">
+			<p>获取微信菜单</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>获取微信菜单</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean|mixed<br>成功返回：{"errcode":0,"errmsg":"ok"}
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

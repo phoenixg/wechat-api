@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LaneWeChat\Core\TemplateMessage</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.html">
+						LaneWeChat<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.html">
+						Core<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-LaneWeChat.Core.Aes.html">
+						Aes					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LaneWeChat.Core.AccessToken.html">AccessToken</a></li>
+				<li><a href="class-LaneWeChat.Core.AdvancedBroadcast.html">AdvancedBroadcast</a></li>
+				<li><a href="class-LaneWeChat.Core.Auth.html">Auth</a></li>
+				<li><a href="class-LaneWeChat.Core.AutoReply.html">AutoReply</a></li>
+				<li><a href="class-LaneWeChat.Core.Curl.html">Curl</a></li>
+				<li><a href="class-LaneWeChat.Core.CustomService.html">CustomService</a></li>
+				<li><a href="class-LaneWeChat.Core.IntelligentInterface.html">IntelligentInterface</a></li>
+				<li><a href="class-LaneWeChat.Core.Media.html">Media</a></li>
+				<li><a href="class-LaneWeChat.Core.Menu.html">Menu</a></li>
+				<li><a href="class-LaneWeChat.Core.Msg.html">Msg</a></li>
+				<li><a href="class-LaneWeChat.Core.MsgConstant.html">MsgConstant</a></li>
+				<li><a href="class-LaneWeChat.Core.Popularize.html">Popularize</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponseInitiative.html">ResponseInitiative</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponsePassive.html">ResponsePassive</a></li>
+				<li class="active"><a href="class-LaneWeChat.Core.TemplateMessage.html">TemplateMessage</a></li>
+				<li><a href="class-LaneWeChat.Core.UserManage.html">UserManage</a></li>
+				<li><a href="class-LaneWeChat.Core.Wechat.html">Wechat</a></li>
+				<li><a href="class-LaneWeChat.Core.WeChatOAuth.html">WeChatOAuth</a></li>
+				<li><a href="class-LaneWeChat.Core.WechatRequest.html">WechatRequest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LaneWeChat.Core.html" title="Summary of LaneWeChat\Core"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class TemplateMessage</h1>
+
+
+	<div class="description">
+	<p>模板消息仅用于公众号向用户发送重要的服务通知，只能用于符合其要求的服务场景中，如信用卡刷卡通知，商品购买成功通知等。不支持广告等营销类消息以及其它所有可能对用户造成骚扰的消息。</p>
+
+<p>关于使用规则，请注意：
+1、所有服务号都可以在功能->添加功能插件处看到申请模板消息功能的入口，但只有认证后的服务号才可以申请模板消息的使用权限并获得该权限；
+2、需要选择公众账号服务所处的2个行业，每月可更改1次所选行业；
+3、在所选择行业的模板库中选用已有的模板进行调用；
+4、每个账号可以同时使用15个模板。
+5、当前每个模板的日调用上限为100000次。</p>
+
+<p>关于接口文档，请注意：
+1、模板消息调用时主要需要模板ID和模板中各参数的赋值内容；
+2、模板中参数内容必须以".DATA"结尾，否则视为保留字；
+3、模板保留符号"{{ }}"。</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-LaneWeChat.html">LaneWeChat</a>\<a href="namespace-LaneWeChat.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-LaneWeChat.Core.TemplateMessage.html#12-88" title="Go to source code">templatemessage.lib.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setIndustry" id="_setIndustry">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIndustry">#</a>
+		<code><a href="source-class-LaneWeChat.Core.TemplateMessage.html#29-42" title="Go to source code">setIndustry</a>( <span> <var>$industryId1</var></span>, <span> <var>$industryId2</var></span> )</code>
+
+		<div class="description short">
+			<p>设置所属行业
+$industryId1 公众号模板消息所属行业编号 请打开连接查看行业编号 http://mp.weixin.qq.com/wiki/17/304c1885ea66dbedf7dc170d84999a9d.html#.E8.AE.BE.E7.BD.AE.E6.89.80.E5.B1.9E.E8.A1.8C.E4.B8.9A
+$industryId2 公众号模板消息所属行业编号</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>设置所属行业
+$industryId1 公众号模板消息所属行业编号 请打开连接查看行业编号 http://mp.weixin.qq.com/wiki/17/304c1885ea66dbedf7dc170d84999a9d.html#.E8.AE.BE.E7.BD.AE.E6.89.80.E5.B1.9E.E8.A1.8C.E4.B8.9A
+$industryId2 公众号模板消息所属行业编号</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTemplateId" id="_getTemplateId">
+
+		<td class="attributes"><code>
+			 public static
+
+			array(&quot;errcode&quot;=&gt;0,
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTemplateId">#</a>
+		<code><a href="source-class-LaneWeChat.Core.TemplateMessage.html#44-57" title="Go to source code">getTemplateId</a>( <span> <var>$templateIdShort</var></span> )</code>
+
+		<div class="description short">
+			<p>获得模板ID
+$templateIdShort 模板库中模板的编号，有“TM<strong>”和“OPENTMTM</strong>”等形式</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>获得模板ID
+$templateIdShort 模板库中模板的编号，有“TM<strong>”和“OPENTMTM</strong>”等形式</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array(&quot;errcode&quot;=&gt;0,<br>"errmsg"=>"ok", "template_id":"Doclyl5uP7Aciu-qZ7mJNPtWkbkYnWBWVja26EGbNyk")  "errcode"是0则表示没有出错
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendTemplateMessage" id="_sendTemplateMessage">
+
+		<td class="attributes"><code>
+			 public static
+
+			array(&quot;errcode&quot;=&gt;0,
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendTemplateMessage">#</a>
+		<code><a href="source-class-LaneWeChat.Core.TemplateMessage.html#59-87" title="Go to source code">sendTemplateMessage</a>( <span> <var>$data</var></span>, <span> <var>$touser</var></span>, <span> <var>$templateId</var></span>, <span> <var>$url</var></span>, <span>string <var>$topcolor</var> = <span class="php-quote">'#FF0000'</span></span> )</code>
+
+		<div class="description short">
+			<p>向用户推送模板消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>向用户推送模板消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><p>array(
+                 'first'=>array('value'=>'您好，您已成功消费。', 'color'=>'#0A0A0A')
+                 'keynote1'=>array('value'=>'巧克力', 'color'=>'#CCCCCC')
+                 'keynote2'=>array('value'=>'39.8元', 'color'=>'#CCCCCC')
+                 'keynote3'=>array('value'=>'2014年9月16日', 'color'=>'#CCCCCC')
+                 'keynote3'=>array('value'=>'欢迎再次购买。', 'color'=>'#173177')
+);</p></dd>
+					<dt><var>$touser</var></dt>
+					<dd>接收方的OpenId。</dd>
+					<dt><var>$templateId</var></dt>
+					<dd>模板Id。在公众平台线上模板库中选用模板获得ID</dd>
+					<dt><var>$url</var></dt>
+					<dd>URL</dd>
+					<dt><var>$topcolor</var></dt>
+					<dd>顶部颜色， 可以为空。默认是红色</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array(&quot;errcode&quot;=&gt;0,<br><p>"errmsg"=>"ok", "msgid"=>200228332} "errcode"是0则表示没有出错</p>
+
+<p>注意：推送后用户到底是否成功接受，微信会向公众号推送一个消息。</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

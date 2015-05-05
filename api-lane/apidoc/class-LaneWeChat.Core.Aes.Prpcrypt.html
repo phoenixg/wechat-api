@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LaneWeChat\Core\Aes\Prpcrypt</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.html">
+						LaneWeChat<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.html">
+						Core<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.Aes.html">
+						Aes					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LaneWeChat.Core.Aes.ErrorCode.html">ErrorCode</a></li>
+				<li><a href="class-LaneWeChat.Core.Aes.PKCS7Encoder.html">PKCS7Encoder</a></li>
+				<li class="active"><a href="class-LaneWeChat.Core.Aes.Prpcrypt.html">Prpcrypt</a></li>
+				<li><a href="class-LaneWeChat.Core.Aes.SHA1.html">SHA1</a></li>
+				<li><a href="class-LaneWeChat.Core.Aes.WXBizMsgCrypt.html">WXBizMsgCrypt</a></li>
+				<li><a href="class-LaneWeChat.Core.Aes.XMLParse.html">XMLParse</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LaneWeChat.Core.Aes.html" title="Summary of LaneWeChat\Core\Aes"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Prpcrypt</h1>
+
+
+	<div class="description">
+	<p>Prpcrypt class</p>
+
+<p>提供接收和推送给公众平台消息的加解密接口.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-LaneWeChat.html">LaneWeChat</a>\<a href="namespace-LaneWeChat.Core.html">Core</a>\<a href="namespace-LaneWeChat.Core.Aes.html">Aes</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-LaneWeChat.Core.Aes.Prpcrypt.html#3-114" title="Go to source code">aes/prpcrypt.lib.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="Prpcrypt" id="_Prpcrypt">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Prpcrypt">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Aes.Prpcrypt.html#12-15" title="Go to source code">Prpcrypt</a>( <span> <var>$k</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encrypt" id="_encrypt">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encrypt">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Aes.Prpcrypt.html#17-49" title="Go to source code">encrypt</a>( <span>string <var>$text</var></span>, <span> <var>$appid</var></span> )</code>
+
+		<div class="description short">
+			<p>对明文进行加密</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>对明文进行加密</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd>需要加密的明文</dd>
+					<dt><var>$appid</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>加密后的密文
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="decrypt" id="_decrypt">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_decrypt">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Aes.Prpcrypt.html#51-95" title="Go to source code">decrypt</a>( <span>string <var>$encrypted</var></span>, <span> <var>$appid</var></span> )</code>
+
+		<div class="description short">
+			<p>对密文进行解密</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>对密文进行解密</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$encrypted</var></dt>
+					<dd>需要解密的密文</dd>
+					<dt><var>$appid</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>解密得到的明文
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRandomStr" id="_getRandomStr">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRandomStr">#</a>
+		<code><a href="source-class-LaneWeChat.Core.Aes.Prpcrypt.html#98-112" title="Go to source code">getRandomStr</a>( )</code>
+
+		<div class="description short">
+			<p>随机生成16位字符串</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>随机生成16位字符串</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>生成的字符串
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="key" id="$key">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LaneWeChat.Core.Aes.Prpcrypt.html#10" title="Go to source code"><var>$key</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$key" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

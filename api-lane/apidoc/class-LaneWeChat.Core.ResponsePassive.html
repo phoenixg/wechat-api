@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LaneWeChat\Core\ResponsePassive</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.html">
+						LaneWeChat<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.html">
+						Core<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-LaneWeChat.Core.Aes.html">
+						Aes					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LaneWeChat.Core.AccessToken.html">AccessToken</a></li>
+				<li><a href="class-LaneWeChat.Core.AdvancedBroadcast.html">AdvancedBroadcast</a></li>
+				<li><a href="class-LaneWeChat.Core.Auth.html">Auth</a></li>
+				<li><a href="class-LaneWeChat.Core.AutoReply.html">AutoReply</a></li>
+				<li><a href="class-LaneWeChat.Core.Curl.html">Curl</a></li>
+				<li><a href="class-LaneWeChat.Core.CustomService.html">CustomService</a></li>
+				<li><a href="class-LaneWeChat.Core.IntelligentInterface.html">IntelligentInterface</a></li>
+				<li><a href="class-LaneWeChat.Core.Media.html">Media</a></li>
+				<li><a href="class-LaneWeChat.Core.Menu.html">Menu</a></li>
+				<li><a href="class-LaneWeChat.Core.Msg.html">Msg</a></li>
+				<li><a href="class-LaneWeChat.Core.MsgConstant.html">MsgConstant</a></li>
+				<li><a href="class-LaneWeChat.Core.Popularize.html">Popularize</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponseInitiative.html">ResponseInitiative</a></li>
+				<li class="active"><a href="class-LaneWeChat.Core.ResponsePassive.html">ResponsePassive</a></li>
+				<li><a href="class-LaneWeChat.Core.TemplateMessage.html">TemplateMessage</a></li>
+				<li><a href="class-LaneWeChat.Core.UserManage.html">UserManage</a></li>
+				<li><a href="class-LaneWeChat.Core.Wechat.html">Wechat</a></li>
+				<li><a href="class-LaneWeChat.Core.WeChatOAuth.html">WeChatOAuth</a></li>
+				<li><a href="class-LaneWeChat.Core.WechatRequest.html">WechatRequest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LaneWeChat.Core.html" title="Summary of LaneWeChat\Core"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ResponsePassive</h1>
+
+
+	<div class="description">
+	<p>发送被动响应
+Created by Lane.
+User: lane
+Date: 13-12-19
+Time: 下午3:01
+Mail: lixuan868686@163.com
+Website: http://www.lanecn.com</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-LaneWeChat.html">LaneWeChat</a>\<a href="namespace-LaneWeChat.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-LaneWeChat.Core.ResponsePassive.html#4-214" title="Go to source code">responsepassive.lib.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="text" id="_text">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_text">#</a>
+		<code><a href="source-class-LaneWeChat.Core.ResponsePassive.html#14-34" title="Go to source code">text</a>( <span> <var>$fromusername</var></span>, <span> <var>$tousername</var></span>, <span> <var>$content</var></span>, <span> <var>$funcFlag</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromusername</var></dt>
+					<dd></dd>
+					<dt><var>$tousername</var></dt>
+					<dd></dd>
+					<dt><var>$content</var></dt>
+					<dd>回复的消息内容（换行：在content中能够换行，微信客户端就支持换行显示）</dd>
+					<dt><var>$funcFlag</var></dt>
+					<dd>默认为0，设为1时星标刚才收到的消息</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Descrpition</h4>
+				<div class="list">
+						文本<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="image" id="_image">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_image">#</a>
+		<code><a href="source-class-LaneWeChat.Core.ResponsePassive.html#36-58" title="Go to source code">image</a>( <span> <var>$fromusername</var></span>, <span> <var>$tousername</var></span>, <span> <var>$mediaId</var></span>, <span> <var>$funcFlag</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromusername</var></dt>
+					<dd></dd>
+					<dt><var>$tousername</var></dt>
+					<dd></dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>通过上传多媒体文件，得到的id。</dd>
+					<dt><var>$funcFlag</var></dt>
+					<dd>默认为0，设为1时星标刚才收到的消息</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Descrpition</h4>
+				<div class="list">
+						图片<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="voice" id="_voice">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_voice">#</a>
+		<code><a href="source-class-LaneWeChat.Core.ResponsePassive.html#60-82" title="Go to source code">voice</a>( <span> <var>$fromusername</var></span>, <span> <var>$tousername</var></span>, <span> <var>$mediaId</var></span>, <span> <var>$funcFlag</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromusername</var></dt>
+					<dd></dd>
+					<dt><var>$tousername</var></dt>
+					<dd></dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>通过上传多媒体文件，得到的id</dd>
+					<dt><var>$funcFlag</var></dt>
+					<dd>默认为0，设为1时星标刚才收到的消息</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Descrpition</h4>
+				<div class="list">
+						语音<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="video" id="_video">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_video">#</a>
+		<code><a href="source-class-LaneWeChat.Core.ResponsePassive.html#84-110" title="Go to source code">video</a>( <span> <var>$fromusername</var></span>, <span> <var>$tousername</var></span>, <span> <var>$mediaId</var></span>, <span> <var>$title</var></span>, <span> <var>$description</var></span>, <span> <var>$funcFlag</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromusername</var></dt>
+					<dd></dd>
+					<dt><var>$tousername</var></dt>
+					<dd></dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>通过上传多媒体文件，得到的id</dd>
+					<dt><var>$title</var></dt>
+					<dd>标题</dd>
+					<dt><var>$description</var></dt>
+					<dd>描述</dd>
+					<dt><var>$funcFlag</var></dt>
+					<dd>默认为0，设为1时星标刚才收到的消息</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Descrpition</h4>
+				<div class="list">
+						视频<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="music" id="_music">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_music">#</a>
+		<code><a href="source-class-LaneWeChat.Core.ResponsePassive.html#112-142" title="Go to source code">music</a>( <span> <var>$fromusername</var></span>, <span> <var>$tousername</var></span>, <span> <var>$title</var></span>, <span> <var>$description</var></span>, <span> <var>$musicUrl</var></span>, <span> <var>$hqMusicUrl</var></span>, <span> <var>$thumbMediaId</var></span>, <span> <var>$funcFlag</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromusername</var></dt>
+					<dd></dd>
+					<dt><var>$tousername</var></dt>
+					<dd></dd>
+					<dt><var>$title</var></dt>
+					<dd>标题</dd>
+					<dt><var>$description</var></dt>
+					<dd>描述</dd>
+					<dt><var>$musicUrl</var></dt>
+					<dd>音乐链接</dd>
+					<dt><var>$hqMusicUrl</var></dt>
+					<dd>高质量音乐链接，WIFI环境优先使用该链接播放音乐</dd>
+					<dt><var>$thumbMediaId</var></dt>
+					<dd>缩略图的媒体id，通过上传多媒体文件，得到的id</dd>
+					<dt><var>$funcFlag</var></dt>
+					<dd>默认为0，设为1时星标刚才收到的消息</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Descrpition</h4>
+				<div class="list">
+						音乐<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="newsItem" id="_newsItem">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_newsItem">#</a>
+		<code><a href="source-class-LaneWeChat.Core.ResponsePassive.html#144-163" title="Go to source code">newsItem</a>( <span> <var>$title</var></span>, <span> <var>$description</var></span>, <span> <var>$picUrl</var></span>, <span> <var>$url</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$title</var></dt>
+					<dd>标题</dd>
+					<dt><var>$description</var></dt>
+					<dd>描述</dd>
+					<dt><var>$picUrl</var></dt>
+					<dd>图片链接，支持JPG、PNG格式，较好的效果为大图360<em>200，小图200</em>200</dd>
+					<dt><var>$url</var></dt>
+					<dd>点击图文消息跳转链接</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Descrpition</h4>
+				<div class="list">
+						<p>图文消息 - 单个项目的准备工作，用于内嵌到self::news()中。现调用本方法，再调用self::news()
+             多条图文消息信息，默认第一个item为大图,注意，如果调用本方法得到的数组总项数超过10，则将会无响应</p><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="news" id="_news">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_news">#</a>
+		<code><a href="source-class-LaneWeChat.Core.ResponsePassive.html#165-194" title="Go to source code">news</a>( <span> <var>$fromusername</var></span>, <span> <var>$tousername</var></span>, <span> <var>$item</var></span>, <span> <var>$funcFlag</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromusername</var></dt>
+					<dd></dd>
+					<dt><var>$tousername</var></dt>
+					<dd></dd>
+					<dt><var>$item</var></dt>
+					<dd>数组，每个项由self::newsItem()返回</dd>
+					<dt><var>$funcFlag</var></dt>
+					<dd>默认为0，设为1时星标刚才收到的消息</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Descrpition</h4>
+				<div class="list">
+						图文 - 先调用self::newsItem()再调用本方法<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="forwardToCustomService" id="_forwardToCustomService">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_forwardToCustomService">#</a>
+		<code><a href="source-class-LaneWeChat.Core.ResponsePassive.html#196-213" title="Go to source code">forwardToCustomService</a>( <span> <var>$fromusername</var></span>, <span> <var>$tousername</var></span> )</code>
+
+		<div class="description short">
+			<p>将消息转发到多客服
+如果公众号处于开发模式，需要在接收到用户发送的消息时，返回一个MsgType为transfer_customer_service的消息，微信服务器在收到这条消息时，会把这次发送的消息转到多客服系统。用户被客服接入以后，客服关闭会话以前，处于会话过程中，用户发送的消息均会被直接转发至客服系统。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>将消息转发到多客服
+如果公众号处于开发模式，需要在接收到用户发送的消息时，返回一个MsgType为transfer_customer_service的消息，微信服务器在收到这条消息时，会把这次发送的消息转到多客服系统。用户被客服接入以后，客服关闭会话以前，处于会话过程中，用户发送的消息均会被直接转发至客服系统。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromusername</var></dt>
+					<dd></dd>
+					<dt><var>$tousername</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

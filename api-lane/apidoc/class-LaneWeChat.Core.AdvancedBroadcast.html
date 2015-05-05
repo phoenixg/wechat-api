@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LaneWeChat\Core\AdvancedBroadcast</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.html">
+						LaneWeChat<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LaneWeChat.Core.html">
+						Core<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-LaneWeChat.Core.Aes.html">
+						Aes					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LaneWeChat.Core.AccessToken.html">AccessToken</a></li>
+				<li class="active"><a href="class-LaneWeChat.Core.AdvancedBroadcast.html">AdvancedBroadcast</a></li>
+				<li><a href="class-LaneWeChat.Core.Auth.html">Auth</a></li>
+				<li><a href="class-LaneWeChat.Core.AutoReply.html">AutoReply</a></li>
+				<li><a href="class-LaneWeChat.Core.Curl.html">Curl</a></li>
+				<li><a href="class-LaneWeChat.Core.CustomService.html">CustomService</a></li>
+				<li><a href="class-LaneWeChat.Core.IntelligentInterface.html">IntelligentInterface</a></li>
+				<li><a href="class-LaneWeChat.Core.Media.html">Media</a></li>
+				<li><a href="class-LaneWeChat.Core.Menu.html">Menu</a></li>
+				<li><a href="class-LaneWeChat.Core.Msg.html">Msg</a></li>
+				<li><a href="class-LaneWeChat.Core.MsgConstant.html">MsgConstant</a></li>
+				<li><a href="class-LaneWeChat.Core.Popularize.html">Popularize</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponseInitiative.html">ResponseInitiative</a></li>
+				<li><a href="class-LaneWeChat.Core.ResponsePassive.html">ResponsePassive</a></li>
+				<li><a href="class-LaneWeChat.Core.TemplateMessage.html">TemplateMessage</a></li>
+				<li><a href="class-LaneWeChat.Core.UserManage.html">UserManage</a></li>
+				<li><a href="class-LaneWeChat.Core.Wechat.html">Wechat</a></li>
+				<li><a href="class-LaneWeChat.Core.WeChatOAuth.html">WeChatOAuth</a></li>
+				<li><a href="class-LaneWeChat.Core.WechatRequest.html">WechatRequest</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LaneWeChat.Core.html" title="Summary of LaneWeChat\Core"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AdvancedBroadcast</h1>
+
+
+	<div class="description">
+	<p>高级群发接口
+User: lane
+Date: 14-10-27
+Time: 下午7:24
+E-mail: lixuan868686@163.com
+WebSite: http://www.lanecn.com</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-LaneWeChat.html">LaneWeChat</a>\<a href="namespace-LaneWeChat.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#3-400" title="Go to source code">advancedbroadcast.lib.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="uploadNews" id="_uploadNews">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_uploadNews">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#13-38" title="Go to source code">uploadNews</a>( <span> <var>$articles</var></span> )</code>
+
+		<div class="description short">
+			<p>上传图文消息素材 - 创建一个图文消息，保存到微信服务器，可以得到一个id代表这个图文消息，发送的时候根据这个id发送就可以了</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>上传图文消息素材 - 创建一个图文消息，保存到微信服务器，可以得到一个id代表这个图文消息，发送的时候根据这个id发送就可以了</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$articles</var></dt>
+					<dd><p>array(
+array('thumb_media_id'=>'多媒体ID，由多媒体上传接口获得' , 'author'=>'作者', 'title'=>'标题', 'content_source_url'=>'www.lanecn.com', content=>'图文消息页面的内容，支持HTML标签', 'digest'=>'摘要', 'show_cover_pic'=>'是否设置为封面（0或者1）'),
+array('thumb_media_id'=>'多媒体ID，由多媒体上传接口获得' , 'author'=>'作者', 'title'=>'标题', 'content_source_url'=>'www.lanecn.com', content=>'图文消息页面的内容，支持HTML标签', 'digest'=>'摘要', 'show_cover_pic'=>'是否设置为封面（0或者1）'),
+                 )</p>
+
+<p>return mediaId 上传的图文消息的ID</p></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentNewsByGroup" id="_sentNewsByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentNewsByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#40-58" title="Go to source code">sentNewsByGroup</a>( <span> <var>$groupId</var></span>, <span> <var>$mediaId</var></span>, <span> <var>$isToAll</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>根据分组进行群发 - 发送图文消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据分组进行群发 - 发送图文消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$groupId</var></dt>
+					<dd>要发送的分组ID</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>必须通过self::uploadNews获得的多媒体资源ID</dd>
+					<dt><var>$isToAll</var></dt>
+					<dd>使用is_to_all为true且成功群发，会使得此次群发进入历史消息列表。</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentTextByGroup" id="_sentTextByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentTextByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#60-78" title="Go to source code">sentTextByGroup</a>( <span> <var>$groupId</var></span>, <span> <var>$content</var></span>, <span> <var>$isToAll</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>根据分组进行群发 - 发送文本消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据分组进行群发 - 发送文本消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$groupId</var></dt>
+					<dd>要发送的分组ID</dd>
+					<dt><var>$content</var></dt>
+					<dd>文本消息的内容</dd>
+					<dt><var>$isToAll</var></dt>
+					<dd>使用is_to_all为true且成功群发，会使得此次群发进入历史消息列表。</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentVoiceByGroup" id="_sentVoiceByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentVoiceByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#80-98" title="Go to source code">sentVoiceByGroup</a>( <span> <var>$groupId</var></span>, <span> <var>$mediaId</var></span>, <span> <var>$isToAll</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>根据分组进行群发 - 发送语音消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据分组进行群发 - 发送语音消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$groupId</var></dt>
+					<dd>要发送的分组ID</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+					<dt><var>$isToAll</var></dt>
+					<dd>使用is_to_all为true且成功群发，会使得此次群发进入历史消息列表。</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentImageByGroup" id="_sentImageByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentImageByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#100-118" title="Go to source code">sentImageByGroup</a>( <span> <var>$groupId</var></span>, <span> <var>$mediaId</var></span>, <span> <var>$isToAll</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>根据分组进行群发 - 发送图片消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据分组进行群发 - 发送图片消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$groupId</var></dt>
+					<dd>要发送的分组ID</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+					<dt><var>$isToAll</var></dt>
+					<dd>使用is_to_all为true且成功群发，会使得此次群发进入历史消息列表。</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentVideoByGroup" id="_sentVideoByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentVideoByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#120-152" title="Go to source code">sentVideoByGroup</a>( <span> <var>$mediaId</var></span>, <span> <var>$title</var></span>, <span> <var>$description</var></span>, <span> <var>$groupId</var></span>, <span> <var>$isToAll</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>根据分组进行群发 - 发送视频消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据分组进行群发 - 发送视频消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mediaId</var></dt>
+					<dd>要发送的分组ID</dd>
+					<dt><var>$title</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+					<dt><var>$description</var></dt>
+					<dd>使用is_to_all为true且成功群发，会使得此次群发进入历史消息列表。</dd>
+					<dt><var>$groupId</var></dt>
+					<dd></dd>
+					<dt><var>$isToAll</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentNewsByOpenId" id="_sentNewsByOpenId">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentNewsByOpenId">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#154-170" title="Go to source code">sentNewsByOpenId</a>( <span> <var>$toUserList</var></span>, <span> <var>$mediaId</var></span> )</code>
+
+		<div class="description short">
+			<p>根据OpenID列表群发 - 发送图文消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据OpenID列表群发 - 发送图文消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$toUserList</var></dt>
+					<dd>openId2, openId3)</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>必须通过self::uploadNews获得的多媒体资源ID</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentTextByOpenId" id="_sentTextByOpenId">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentTextByOpenId">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#172-188" title="Go to source code">sentTextByOpenId</a>( <span> <var>$toUserList</var></span>, <span> <var>$content</var></span> )</code>
+
+		<div class="description short">
+			<p>根据OpenID列表群发 - 发送文本消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据OpenID列表群发 - 发送文本消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$toUserList</var></dt>
+					<dd>openId2, openId3)</dd>
+					<dt><var>$content</var></dt>
+					<dd>文本消息的内容</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentVoiceByOpenId" id="_sentVoiceByOpenId">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentVoiceByOpenId">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#190-206" title="Go to source code">sentVoiceByOpenId</a>( <span> <var>$toUserList</var></span>, <span> <var>$mediaId</var></span> )</code>
+
+		<div class="description short">
+			<p>根据OpenID列表群发 - 发送语音消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据OpenID列表群发 - 发送语音消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$toUserList</var></dt>
+					<dd>openId2, openId3)</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentImageByOpenId" id="_sentImageByOpenId">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentImageByOpenId">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#208-224" title="Go to source code">sentImageByOpenId</a>( <span> <var>$toUserList</var></span>, <span> <var>$mediaId</var></span> )</code>
+
+		<div class="description short">
+			<p>根据OpenID列表群发 - 发送图片消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据OpenID列表群发 - 发送图片消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$toUserList</var></dt>
+					<dd>openId2, openId3)</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sentVideoByOpenId" id="_sentVideoByOpenId">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sentVideoByOpenId">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#226-258" title="Go to source code">sentVideoByOpenId</a>( <span> <var>$toUserList</var></span>, <span> <var>$mediaId</var></span>, <span> <var>$title</var></span>, <span> <var>$description</var></span> )</code>
+
+		<div class="description short">
+			<p>根据OpenID列表群发 - 发送视频消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>根据OpenID列表群发 - 发送视频消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$toUserList</var></dt>
+					<dd>openId2, openId3)</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+					<dt><var>$title</var></dt>
+					<dd></dd>
+					<dt><var>$description</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#260-274" title="Go to source code">delete</a>( <span> <var>$msgId</var></span> )</code>
+
+		<div class="description short">
+			<p>删除群发
+请注意，只有已经发送成功的消息才能删除删除消息只是将消息的图文详情页失效，已经收到的用户，还是能在其本地看到消息卡片。 另外，删除群发消息只能删除图文消息和视频消息，其他类型的消息一经发送，无法删除。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>删除群发
+请注意，只有已经发送成功的消息才能删除删除消息只是将消息的图文详情页失效，已经收到的用户，还是能在其本地看到消息卡片。 另外，删除群发消息只能删除图文消息和视频消息，其他类型的消息一经发送，无法删除。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$msgId</var></dt>
+					<dd>发送出去的消息ID</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"ok"} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="previewNewsByGroup" id="_previewNewsByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_previewNewsByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#280-296" title="Go to source code">previewNewsByGroup</a>( <span> <var>$openId</var></span>, <span> <var>$mediaId</var></span> )</code>
+
+		<div class="description short">
+			<p>预览 - 预览图文消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>预览 - 预览图文消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openId</var></dt>
+					<dd>发送消息给指定用户,该用户的OpenId</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>必须通过self::uploadNews获得的多媒体资源ID</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="previewTextByGroup" id="_previewTextByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_previewTextByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#298-314" title="Go to source code">previewTextByGroup</a>( <span> <var>$openId</var></span>, <span> <var>$content</var></span> )</code>
+
+		<div class="description short">
+			<p>预览 - 预览文本消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>预览 - 预览文本消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openId</var></dt>
+					<dd>发送消息给指定用户,该用户的OpenId</dd>
+					<dt><var>$content</var></dt>
+					<dd>文本消息的内容</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="previewVoiceByGroup" id="_previewVoiceByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_previewVoiceByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#316-332" title="Go to source code">previewVoiceByGroup</a>( <span> <var>$openId</var></span>, <span> <var>$mediaId</var></span> )</code>
+
+		<div class="description short">
+			<p>预览 - 预览语音消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>预览 - 预览语音消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openId</var></dt>
+					<dd>发送消息给指定用户,该用户的OpenId</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="previewImageByGroup" id="_previewImageByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_previewImageByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#334-350" title="Go to source code">previewImageByGroup</a>( <span> <var>$openId</var></span>, <span> <var>$mediaId</var></span> )</code>
+
+		<div class="description short">
+			<p>预览 - 预览图片消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>预览 - 预览图片消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openId</var></dt>
+					<dd>发送消息给指定用户,该用户的OpenId</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="previewVideoByGroup" id="_previewVideoByGroup">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_previewVideoByGroup">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#352-382" title="Go to source code">previewVideoByGroup</a>( <span> <var>$mediaId</var></span>, <span> <var>$title</var></span>, <span> <var>$description</var></span>, <span> <var>$openId</var></span> )</code>
+
+		<div class="description short">
+			<p>预览 - 预览视频消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>预览 - 预览视频消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mediaId</var></dt>
+					<dd>发送消息给指定用户,该用户的OpenId</dd>
+					<dt><var>$title</var></dt>
+					<dd>需通过基础支持中的上传下载多媒体文件来得到。Media::upload()中返回的media_id字段的值</dd>
+					<dt><var>$description</var></dt>
+					<dd></dd>
+					<dt><var>$openId</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("errcode"=>0, "errmsg"=>"success","msg_id"=>34182} 正常是errcode为0
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStatus" id="_getStatus">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStatus">#</a>
+		<code><a href="source-class-LaneWeChat.Core.AdvancedBroadcast.html#384-399" title="Go to source code">getStatus</a>( <span> <var>$openId</var></span>, <span> <var>$mediaId</var></span> )</code>
+
+		<div class="description short">
+			<p>查询群发消息发送状态【订阅号与服务号认证后均可用】</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>查询群发消息发送状态【订阅号与服务号认证后均可用】</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openId</var></dt>
+					<dd>群发消息后返回的消息id</dd>
+					<dt><var>$mediaId</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>array("msg_status":"SEND_SUCCESS","msg_id"=>34182)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
