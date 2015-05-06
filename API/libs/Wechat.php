@@ -12,11 +12,14 @@ class Wechat {
         }
 
         $this->_token = $token;
-
-        // $xml = (array) simplexml_load_string($GLOBALS['HTTP_RAW_POST_DATA'], 'SimpleXMLElement', LIBXML_NOCDATA);
-        // $this->_requestXML = array_change_key_case($xml, CASE_LOWER);
     }
 
+    public function serve() {
+
+    }
+
+
+    // 接入验证
     public function checkSignature() {
         $signature = $_GET["signature"];
         $timestamp = $_GET["timestamp"];
@@ -31,10 +34,10 @@ class Wechat {
             echo $_GET['echostr'];
             return true;
         }else{
+            echo 'YOU SHALL NOT PASS!';
             return false;
         }
     }
-
 
 }
 
