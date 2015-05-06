@@ -14,6 +14,15 @@ class Wechat {
         $this->_token = $token;
     }
 
+    public function setRequestXML() {
+        $xml = (array) simplexml_load_string($GLOBALS['HTTP_RAW_POST_DATA'], 'SimpleXMLElement', LIBXML_NOCDATA);
+        $this->_requestXML = $xml;
+    }
+
+    public function getRequestXML() {
+        return $this->_requestXML;
+    }
+
     public function serve() {
 
     }
