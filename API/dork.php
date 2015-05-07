@@ -2,11 +2,13 @@
 namespace PhxWechat;
 
 use PhxWechat\Core\Request;
+use PhxWechat\Core\ResponseMessageStaticFactory;
 use PhxWechat\Core\Wechat;
 use PhxWechat\Utilities\Utilities;
 
 require './libs/Wechat.php';
 require './libs/XMLTemplateResponse.php';
+require './libs/ResponseMessageStaticFactory.php';
 require './libs/Request.php';
 require './libs/Utilities/Utilities.php';
 $config = include '../shared/config/config.php';
@@ -19,8 +21,13 @@ $config = include '../shared/config/config.php';
 $request = new Request();
 $requestXMLArray = $request->getRequestXMLArray();
 Utilities::logDebug($requestXMLArray);
-die;
+
 // 根据请求消息的类型，执行对应文件里的逻辑
+$msgType = $requestXMLArray['MsgType'];
+$responseMessageObj = ResponseMessageStaticFactory::factory($msgType);
+$responseMessageObj->output();
+
+
 switch ($requestXMLArray['MsgType']) {
     case 'event':
         switch ($request['event']) {
