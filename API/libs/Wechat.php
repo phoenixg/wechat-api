@@ -3,7 +3,7 @@ namespace PhxWechat\Core;
 
 class Wechat {
 
-    private $_requestXML;
+    private $_requestXMLArray;
     private $_token;
 
     public function __construct($token) {
@@ -14,13 +14,9 @@ class Wechat {
         $this->_token = $token;
     }
 
-    public function setRequestXML() {
-        $xml = (array) simplexml_load_string($GLOBALS['HTTP_RAW_POST_DATA'], 'SimpleXMLElement', LIBXML_NOCDATA);
-        $this->_requestXML = $xml;
-    }
-
-    public function getRequestXML() {
-        return $this->_requestXML;
+    public function getRequestXMLArray() {
+        $this->_requestXMLArray = (array) simplexml_load_string($GLOBALS['HTTP_RAW_POST_DATA'], 'SimpleXMLElement', LIBXML_NOCDATA);
+        return $this->_requestXMLArray;
     }
 
     public function serve() {
