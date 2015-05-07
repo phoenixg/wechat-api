@@ -18,5 +18,19 @@ XML;
         return sprintf($template, $fromUsername, $toUsername, time(), $content, $funcFlag);
     }
 
-
+    public static function image($fromUsername, $toUsername, $mediaId, $funcFlag=0){
+        $template = <<<XML
+<xml>
+    <FromUserName><![CDATA[%s]]></FromUserName>
+    <ToUserName><![CDATA[%s]]></ToUserName>
+    <CreateTime>%s</CreateTime>
+    <MsgType><![CDATA[image]]></MsgType>
+    <Image>
+    <MediaId><![CDATA[%s]]></MediaId>
+    </Image>
+    <FuncFlag>%s</FuncFlag>
+</xml>
+XML;
+        return sprintf($template, $fromUsername, $toUsername, time(), $mediaId, $funcFlag);
+    }
 }
