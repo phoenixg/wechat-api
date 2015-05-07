@@ -2,8 +2,6 @@
 namespace PhxWechat\Core;
 
 class Wechat {
-
-    private $_requestXMLArray;
     private $_token;
 
     public function __construct($token) {
@@ -12,11 +10,6 @@ class Wechat {
         }
 
         $this->_token = $token;
-    }
-
-    public function getRequestXMLArray() {
-        $this->_requestXMLArray = (array) simplexml_load_string($GLOBALS['HTTP_RAW_POST_DATA'], 'SimpleXMLElement', LIBXML_NOCDATA);
-        return $this->_requestXMLArray;
     }
 
     public function serve() {
