@@ -1,8 +1,8 @@
 <?php
-namespace PhxWechat\Core;
+namespace PhxWechat\ResponseMessage;
 use PhxWechat\Core\XMLTemplateResponse;
 
-class ResponseLocationMessage implements ResponseMessageInterface {
+class Location implements ResponseMessageInterface {
     public function output(){
         $XMLTemplateResponse = new XMLTemplateResponse();
         echo $XMLTemplateResponse->text($requestXMLArray['ToUserName'], $requestXMLArray['FromUserName'], 'hi location');

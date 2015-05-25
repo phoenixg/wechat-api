@@ -1,15 +1,14 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+
 
 use PhxWechat\Core\Request;
 use PhxWechat\Core\ResponseMessageStaticFactory;
 use PhxWechat\Core\Wechat;
 use PhxWechat\Utilities\Utilities;
 
-require './libs/Wechat.php';
-require './libs/XMLTemplateResponse.php';
-require './libs/ResponseMessageStaticFactory.php';
-require './libs/Request.php';
-require './libs/Utilities/Utilities.php';
+
 $config = include '../shared/config/config.php';
 
 
