@@ -1,15 +1,10 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+// require_once __DIR__ . '/vendor/autoload.php';
 
+$config = parse_ini_file('config/config.ini');
 
+/*
 
-use PhxWechat\Core\Request;
-use PhxWechat\Core\ResponseMessageStaticFactory;
-use PhxWechat\Core\Wechat;
-use PhxWechat\Utilities\Utilities;
-
-
-$config = include '../shared/config/config.php';
 
 
 // 验证接入接口
