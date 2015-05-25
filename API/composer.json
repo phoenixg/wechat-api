@@ -1,0 +1,27 @@
+{
+  "name": "Phx-wechat-api",
+  "description": "微信API",
+  "keywords": [
+    "wechat",
+    "weixin",
+    "weixin-sdk",
+    "weixin-api"
+  ],
+  "license": "MIT",
+  "require": {
+    "php":">=5.3",
+    "ext-mcrypt": "*"
+  },
+  "authors": [
+    {
+      "name": "Phx",
+      "email": "306761352@qq.com"
+    }
+  ],
+  "minimum-stability" : "dev",
+  "autoload": {
+    "psr-4": {
+      "PhxWechat\\": "src/"
+    }
+  }
+}

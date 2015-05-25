@@ -1,5 +1,4 @@
-<?php
-namespace PhxWechat\Core;
+<?php namespace PhxWechat\Core;
 
 class ResponseMessageStaticFactory
 {

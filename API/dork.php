@@ -1,5 +1,4 @@
 <?php
-namespace PhxWechat;
 
 use PhxWechat\Core\Request;
 use PhxWechat\Core\ResponseMessageStaticFactory;
